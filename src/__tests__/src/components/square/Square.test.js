@@ -6,7 +6,7 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 // Relative import path within the test file location context
-import Square from "../../../../../components/square/Square.js";
+import Square from "../../../../components/square/Square.js";
 
 describe("Square Component Tests", () => {
   // Setup or teardown functions can be included here, e.g., beforeAll, beforeEach, etc.

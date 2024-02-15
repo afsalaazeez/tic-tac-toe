@@ -6,7 +6,7 @@
 
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-import Board from "../../../components/board/Board";
+import Board from "../../../../components/board/Board";
 
 // Test suite for Board component
 describe("Board", () => {
