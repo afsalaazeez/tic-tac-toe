@@ -6,7 +6,7 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import Game from "../../components/game/Game.js"; // Adjust import path as necessary
+import Game from "../../index"; // Adjust import path as necessary
 
 describe("Game Component", () => {
   test("renders without crashing", () => {
