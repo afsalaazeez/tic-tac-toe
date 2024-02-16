@@ -1,0 +1,246 @@
+// added jest-module to handle static assets like .webp files using a custom transformer
+ PASS  src/__tests__/src/helpers/calculateWinner.test.js
+ FAIL  src/__tests__/src/reportWebVitals.test.js
+  ● reportWebVitals › calls callback with metrics when observed
+
+    TypeError: window.__WEB_VITALS_POLYFILL_REPORT_HANDLER__ is not a function
+
+      23 |
+      24 |     // Simulate a metric being observed
+    > 25 |     window.__WEB_VITALS_POLYFILL_REPORT_HANDLER__(metric);
+         |            ^
+      26 |
+      27 |     // Expect the callback to have been called with the metric
+      28 |     expect(callback).toHaveBeenCalledWith(metric);
+
+      at Object.<anonymous> (src/__tests__/src/reportWebVitals.test.js:25:12)
+
+ PASS  src/__tests__/src/components/square/Square.test.js
+ FAIL  src/__tests__/src/index.test.js
+  ● Test suite failed to run
+
+    createRoot(...): Target container is not a DOM element.
+
+      78 | }
+      79 |
+    > 80 | const root = ReactDOM.createRoot(document.getElementById('root'))
+         |                       ^
+      81 | root.render(<Game />)
+      82 |
+
+      at createRoot (node_modules/react-dom/cjs/react-dom.development.js:29345:11)
+      at Object.createRoot$1 [as createRoot] (node_modules/react-dom/cjs/react-dom.development.js:29800:10)
+      at Object.createRoot (node_modules/react-dom/client.js:12:16)
+      at Object.<anonymous> (src/index.js:80:23)
+      at Object.<anonymous> (src/__tests__/src/index.test.js:9:1)
+
+ FAIL  src/__tests__/src/components/board/Board.test.js
+  ● Board › renders a Board with empty squares
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="board"]
+
+    Ignored nodes: comments, script, style
+    <body>
+      <div>
+        <section
+          class="game-section"
+        >
+          <section
+            class="game-board"
+          >
+            <section
+              class="board-row"
+            >
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+            </section>
+            <section
+              class="board-row"
+            >
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+            </section>
+            <section
+              class="board-row"
+            >
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+            </section>
+          </section>
+          <button
+            class="restart"
+          >
+            Restart the game
+          </button>
+        </section>
+      </div>
+    </body>
+
+      17 |       <Board squares={squares} onClick={() => {}} />
+      18 |     );
+    > 19 |     expect(getByTestId("board")).toBeInTheDocument();
+         |            ^
+      20 |     squares.forEach((_, idx) => {
+      21 |       expect(getByTestId(`square-${idx}`)).toHaveTextContent("");
+      22 |     });
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/__tests__/src/components/board/Board.test.js:19:12)
+
+  ● Board › clicking on a Square calls onClick handler with correct index
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="square-0"]
+
+    Ignored nodes: comments, script, style
+    <body>
+      <div>
+        <section
+          class="game-section"
+        >
+          <section
+            class="game-board"
+          >
+            <section
+              class="board-row"
+            >
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+            </section>
+            <section
+              class="board-row"
+            >
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+            </section>
+            <section
+              class="board-row"
+            >
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+              <button
+                class="square"
+              />
+            </section>
+          </section>
+          <button
+            class="restart"
+          >
+            Restart the game
+          </button>
+        </section>
+      </div>
+    </body>
+
+      30 |       <Board squares={squares} onClick={onClick} />
+      31 |     );
+    > 32 |     const square = getByTestId("square-0");
+         |                    ^
+      33 |     fireEvent.click(square);
+      34 |     expect(onClick).toHaveBeenCalledWith(0);
+      35 |   });
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/__tests__/src/components/board/Board.test.js:32:20)
+
+ FAIL  src/__tests__/src/components/moves/Moves.test.js
+  ● Moves Component › renders the correct number of move buttons
+
+    TestingLibraryElementError: Unable to find an accessible element with the role "button"
+
+    There are no accessible roles. But there might be some inaccessible roles. If you wish to access them, then set the `hidden` option to `true`. Learn more about this here: https://testing-library.com/docs/dom-testing-library/api-queries#byrole
+
+    Ignored nodes: comments, script, style
+    <body>
+      <div />
+    </body>
+
+      20 |       <Moves history={mockHistory} jumpTo={() => {}} />
+      21 |     );
+    > 22 |     expect(getAllByRole("button").length).toBe(mockHistory.length);
+         |            ^
+      23 |   });
+      24 |
+      25 |   test("calls jumpTo with the right move index on button click", () => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at getAllByRole (node_modules/@testing-library/dom/dist/query-helpers.js:109:15)
+      at Object.<anonymous> (src/__tests__/src/components/moves/Moves.test.js:22:12)
+
+  ● Moves Component › calls jumpTo with the right move index on button click
+
+    TestingLibraryElementError: Unable to find an accessible element with the role "button"
+
+    There are no accessible roles. But there might be some inaccessible roles. If you wish to access them, then set the `hidden` option to `true`. Learn more about this here: https://testing-library.com/docs/dom-testing-library/api-queries#byrole
+
+    Ignored nodes: comments, script, style
+    <body>
+      <div />
+    </body>
+
+      31 |       <Moves history={mockHistory} jumpTo={mockJumpTo} />
+      32 |     );
+    > 33 |     const buttons = getAllByRole("button");
+         |                     ^
+      34 |
+      35 |     fireEvent.click(buttons[1]); // Assuming that buttons[1] corresponds to 'Go to move #1'
+      36 |     expect(mockJumpTo).toHaveBeenCalledWith(1);
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at getAllByRole (node_modules/@testing-library/dom/dist/query-helpers.js:109:15)
+      at Object.<anonymous> (src/__tests__/src/components/moves/Moves.test.js:33:21)
+
+A worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.
+Test Suites: 4 failed, 2 passed, 6 total
+Tests:       5 failed, 7 passed, 12 total
+Snapshots:   0 total
+Time:        3.829 s
+Ran all test suites.
+
+Watch Usage: Press w to show more.
