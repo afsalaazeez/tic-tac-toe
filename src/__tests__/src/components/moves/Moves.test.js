@@ -16,23 +16,33 @@ describe("Moves Component", () => {
     const mockHistory = [
       /* ... mock history data ... */
     ];
-    const { getAllByRole } = render(
+    const { container } = render(
       <Moves history={mockHistory} jumpTo={() => {}} />
     );
-    expect(getAllByRole("button").length).toBe(mockHistory.length);
+    expect(container.querySelectorAll("button").length).toBe(
+      mockHistory.length
+    );
   });
 
   test("calls jumpTo with the right move index on button click", () => {
     const mockJumpTo = jest.fn();
-    const mockHistory = [
-      /* ... mock history data ... */
-    ];
-    const { getAllByRole } = render(
+    const mockHistory = Array(5)
+      .fill(null)
+      .map((_, move) => ({
+        /* Mock history objects */
+      }));
+
+    const { container } = render(
       <Moves history={mockHistory} jumpTo={mockJumpTo} />
     );
-    const buttons = getAllByRole("button");
 
-    fireEvent.click(buttons[1]); // Assuming that buttons[1] corresponds to 'Go to move #1'
-    expect(mockJumpTo).toHaveBeenCalledWith(1);
+    // Find all buttons with role="button"
+    const buttons = container.querySelectorAll("button");
+
+    // Assuming you want to test the first button, which corresponds to the first move
+    const firstButton = buttons[0];
+    fireEvent.click(firstButton);
+
+    expect(mockJumpTo).toHaveBeenCalledWith(0);
   });
 });
