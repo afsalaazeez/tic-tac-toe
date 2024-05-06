@@ -4,7 +4,7 @@
 // ********RoostGPT********
 import React from "react";
 import { render, cleanup, fireEvent } from "@testing-library/react";
-import Moves from "../../../components/moves/Moves";
+import Moves from "../../../../components/moves/Moves";
 
 describe("Moves Component", () => {
   afterEach(cleanup);
