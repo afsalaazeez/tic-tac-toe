@@ -12,6 +12,7 @@ module.exports = {
     "^helpers/(.*)$": "<rootDir>/src/helpers/$1",
   },
   transformIgnorePatterns: ["/node_modules/"],
+  coverageReporters: ["json-summary"],
   collectCoverage: true,
   coverageDirectory: "<rootDir>/__tests__/coverage",
   reporters: [
@@ -21,6 +22,17 @@ module.exports = {
       {
         pageTitle: "Test Report",
         outputPath: "__tests__/Report/index.html",
+        useCssFile: true,
+      },
+    ],
+    [
+      "@tsdoc-test-reporter/jest",
+      {
+        outputFileType: "json",
+        outputFileName: "reports/tsdoc-report",
+        uiOptions: {
+          htmlTitle: "Title of HTML Page",
+        },
       },
     ],
   ],

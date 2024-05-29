@@ -1,0 +1,183 @@
+{
+  "results": [
+    {
+      "title": "/__tests__/src/components/board/Board.test.js",
+      "filePath": "/private/var/tmp/Roost/RoostGPT/react-test-tic-cli/1716975749/source/tic-tac-toe/__tests__/src/components/board/Board.test.js",
+      "meta": { "failed": 0, "passed": 0, "skipped": 0, "todo": 0 },
+      "assertions": []
+    },
+    {
+      "title": "/__tests__/coverage/lcov-report/sorter.js",
+      "filePath": "/private/var/tmp/Roost/RoostGPT/react-test-tic-cli/1716975749/source/tic-tac-toe/__tests__/coverage/lcov-report/sorter.js",
+      "meta": { "failed": 0, "passed": 0, "skipped": 0, "todo": 0 },
+      "assertions": []
+    },
+    {
+      "title": "/__tests__/src/helpers/calculateWinner.test.js",
+      "filePath": "/private/var/tmp/Roost/RoostGPT/react-test-tic-cli/1716975749/source/tic-tac-toe/__tests__/src/helpers/calculateWinner.test.js",
+      "meta": { "failed": 5, "passed": 0, "skipped": 0, "todo": 0 },
+      "assertions": [
+        {
+          "title": "should return the winner if there is a complete line",
+          "ancestorTitles": ["calculateWinner Function"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        },
+        {
+          "title": "should return null if there is no winner",
+          "ancestorTitles": ["calculateWinner Function"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        },
+        {
+          "title": "should handle incomplete game where all squares are not yet filled",
+          "ancestorTitles": ["calculateWinner Function"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        },
+        {
+          "title": "should detect winner in a backward diagonal",
+          "ancestorTitles": ["calculateWinner Function"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        },
+        {
+          "title": "should return null for an empty board",
+          "ancestorTitles": ["calculateWinner Function"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        }
+      ]
+    },
+    {
+      "title": "/__tests__/coverage/lcov-report/block-navigation.js",
+      "filePath": "/private/var/tmp/Roost/RoostGPT/react-test-tic-cli/1716975749/source/tic-tac-toe/__tests__/coverage/lcov-report/block-navigation.js",
+      "meta": { "failed": 0, "passed": 0, "skipped": 0, "todo": 0 },
+      "assertions": []
+    },
+    {
+      "title": "/__tests__/coverage/lcov-report/prettify.js",
+      "filePath": "/private/var/tmp/Roost/RoostGPT/react-test-tic-cli/1716975749/source/tic-tac-toe/__tests__/coverage/lcov-report/prettify.js",
+      "meta": { "failed": 0, "passed": 0, "skipped": 0, "todo": 0 },
+      "assertions": []
+    },
+    {
+      "title": "/__tests__/src/components/game-info/GameInfo.test.js",
+      "filePath": "/private/var/tmp/Roost/RoostGPT/react-test-tic-cli/1716975749/source/tic-tac-toe/__tests__/src/components/game-info/GameInfo.test.js",
+      "meta": { "failed": 0, "passed": 0, "skipped": 0, "todo": 0 },
+      "assertions": []
+    },
+    {
+      "title": "/__tests__/src/reportWebVitals.test.js",
+      "filePath": "/private/var/tmp/Roost/RoostGPT/react-test-tic-cli/1716975749/source/tic-tac-toe/__tests__/src/reportWebVitals.test.js",
+      "meta": { "failed": 1, "passed": 3, "skipped": 0, "todo": 0 },
+      "assertions": [
+        {
+          "title": "should call onReport without errors",
+          "ancestorTitles": ["reportWebVitals Component Tests"],
+          "status": "fail",
+          "tags": [],
+          "errors": [
+            {
+              "name": "\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalled\u001b[2m()\u001b[22m\n\nExpected number of calls: >= \u001b[32m1\u001b[39m\nReceived number of calls:    \u001b[31m0\u001b[39m",
+              "message": "\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalled\u001b[2m()\u001b[22m\n\nExpected number of calls: >= \u001b[32m1\u001b[39m\nReceived number of calls:    \u001b[31m0\u001b[39m"
+            }
+          ]
+        },
+        {
+          "title": "should not throw error when invoked without arguments",
+          "ancestorTitles": ["reportWebVitals Component Tests"],
+          "status": "pass",
+          "tags": []
+        },
+        {
+          "title": "should handle different input types for onReport",
+          "ancestorTitles": ["reportWebVitals Component Tests"],
+          "status": "pass",
+          "tags": []
+        },
+        {
+          "title": "should not log errors to the console",
+          "ancestorTitles": ["reportWebVitals Component Tests"],
+          "status": "pass",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "title": "/__tests__/src/components/square/Square.test.js",
+      "filePath": "/private/var/tmp/Roost/RoostGPT/react-test-tic-cli/1716975749/source/tic-tac-toe/__tests__/src/components/square/Square.test.js",
+      "meta": { "failed": 4, "passed": 0, "skipped": 0, "todo": 0 },
+      "assertions": [
+        {
+          "title": "renders the button with provided text",
+          "ancestorTitles": ["Square component"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        },
+        {
+          "title": "calls onClick prop when clicked",
+          "ancestorTitles": ["Square component"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        },
+        {
+          "title": "updates the button text when value prop changes",
+          "ancestorTitles": ["Square component"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        },
+        {
+          "title": "does not call onClick if button already clicked",
+          "ancestorTitles": ["Square component"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        }
+      ]
+    },
+    {
+      "title": "/__tests__/src/components/moves/Moves.test.js",
+      "filePath": "/private/var/tmp/Roost/RoostGPT/react-test-tic-cli/1716975749/source/tic-tac-toe/__tests__/src/components/moves/Moves.test.js",
+      "meta": { "failed": 4, "passed": 0, "skipped": 0, "todo": 0 },
+      "assertions": [
+        {
+          "title": "should render without crashing",
+          "ancestorTitles": ["Moves Component"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        },
+        {
+          "title": "should handle click events",
+          "ancestorTitles": ["Moves Component"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        },
+        {
+          "title": "should display error message on failure",
+          "ancestorTitles": ["Moves Component"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        },
+        {
+          "title": "should display correct initial conditions",
+          "ancestorTitles": ["Moves Component"],
+          "status": "fail",
+          "tags": [],
+          "errors": [{ "name": "", "message": "" }]
+        }
+      ]
+    }
+  ]
+}
