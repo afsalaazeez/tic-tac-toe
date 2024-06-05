@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1717567536857" clover="3.2.0">
+  <project timestamp="1717567536857" name="All files">
+    <metrics statements="22" coveredstatements="15" conditionals="11" coveredconditionals="7" methods="7" coveredmethods="5" elements="40" coveredelements="27" complexity="0" loc="22" ncloc="22" packages="4" files="4" classes="4"/>
+    <package name="src">
+      <metrics statements="8" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="reportWebVitals.js" path="/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe/src/reportWebVitals.js">
+        <metrics statements="8" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.moves">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="Moves.js" path="/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe/src/components/moves/Moves.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.square">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Square.js" path="/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe/src/components/square/Square.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="20" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.helpers">
+      <metrics statements="6" coveredstatements="6" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <file name="calculateWinner.js" path="/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe/src/helpers/calculateWinner.js">
+        <metrics statements="6" coveredstatements="6" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="13" count="35" type="stmt"/>
+        <line num="14" count="35" type="cond" truecount="5" falsecount="0"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

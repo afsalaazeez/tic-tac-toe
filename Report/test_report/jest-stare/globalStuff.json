@@ -1,0 +1,83 @@
+{
+  "bail": 0,
+  "changedFilesWithAncestor": false,
+  "ci": false,
+  "collectCoverage": true,
+  "collectCoverageFrom": [],
+  "coverageDirectory": "/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe/Report/coverage_report",
+  "coverageProvider": "babel",
+  "coverageReporters": [
+    "clover",
+    "json",
+    "lcov",
+    "text",
+    "html",
+    "json-summary"
+  ],
+  "detectLeaks": false,
+  "detectOpenHandles": false,
+  "errorOnDeprecated": false,
+  "expand": false,
+  "findRelatedTests": false,
+  "forceExit": false,
+  "json": false,
+  "lastCommit": false,
+  "listTests": false,
+  "logHeapUsage": false,
+  "maxConcurrency": 5,
+  "maxWorkers": 3,
+  "noStackTrace": false,
+  "nonFlagArgs": [
+    "/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe/__tests__"
+  ],
+  "notify": false,
+  "notifyMode": "failure-change",
+  "onlyChanged": false,
+  "onlyFailures": false,
+  "passWithNoTests": false,
+  "projects": [],
+  "reporters": [
+    [
+      "default",
+      {}
+    ],
+    [
+      "/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe/node_modules/jest-html-reporter/dist/index.js",
+      {
+        "pageTitle": "Test Report",
+        "outputPath": "Report/test_report/index.html"
+      }
+    ],
+    [
+      "/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe/node_modules/@tsdoc-test-reporter/jest/src/index.js",
+      {
+        "outputFileType": "json",
+        "outputFileName": "Report/test_report/TestReport"
+      }
+    ],
+    [
+      "/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe/node_modules/jest-stare/lib/index.js",
+      {
+        "resultDir": "Report/test_report/jest-stare/",
+        "reportTitle": "jest-stare!",
+        "additionalResultsProcessors": [],
+        "coverageLink": "<rootDir>/Report/coverage_report/index.html",
+        "jestStareConfigJson": "jest-stare.json",
+        "jestGlobalConfigJson": "globalStuff.json",
+        "resultHtml": "index.html",
+        "resultJson": "jest-results.json"
+      }
+    ]
+  ],
+  "rootDir": "/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe",
+  "runTestsByPath": false,
+  "skipFilter": false,
+  "testFailureExitCode": 1,
+  "testPathPattern": "/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe/__tests__",
+  "testSequencer": "/var/tmp/Roost/RoostGPT/react-test-tic/1dbd8b20-931d-4eab-88f8-a4b0f46cca71/source/tic-tac-toe/node_modules/@jest/test-sequencer/build/index.js",
+  "updateSnapshot": "new",
+  "useStderr": false,
+  "watch": false,
+  "watchAll": false,
+  "watchman": true
+}
